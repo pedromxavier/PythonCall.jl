@@ -12,8 +12,7 @@ const PY_EXE_PATH = joinpath(ENV["CONDA_PREFIX"], "bin", "python")
 @warn "Using " * read(`$(PY_EXE_PATH) --version`, String)
 
 # Python imports
-const py_random = pyimport("random")
-const py_pyperf = pyimport("pyperf")
+
 
 # Benchmark Suites
 const SUITE = BenchmarkGroup()
